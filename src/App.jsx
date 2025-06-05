@@ -1,10 +1,12 @@
 import React from 'react'
 import RegisterPage from './components/RegisterPage'
+import DashboardPage from './components/DashboardPage'
 
 function App() {
   return (
     <div>
-      <RegisterPage/>
+      {/* <RegisterPage/> */}
+      <DashboardPage/>
     </div>
   )
 }
