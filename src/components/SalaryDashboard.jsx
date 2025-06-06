@@ -12,11 +12,11 @@ const SalaryDashboard = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4 font-sans">
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+    <div className="min-h-screen bg-gray-100 p-4  font-sans">
+      <div className="bg-white pb-4 rounded-lg shadow-lg overflow-hidden">
         {/* Header */}
          <div className="w-screen flex justify-center items-center">
- <header className="bg-gradient-to-b from-blue-500/50 via-blue-500/30 to-blue-500/10 shadow-md px-6 py-4 mt-4 mx-6 w-7xl rounded-4xl flex items-center justify-between">
+ <header className="bg-gradient-to-b from-blue-500/50 via-blue-500/30 to-blue-500/10 shadow-md px-6 py-4 mt-4 mx-6 w-7xl rounded-4xl flex items-center justify-between mb-2">
   <div className="flex items-center space-x-4">
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Iconic_image_placeholder.svg"
@@ -90,7 +90,8 @@ const SalaryDashboard = () => {
 
      </div>
 
-        <div className='px-8 mt-1.5' >
+        <div className='flex justify-center items-center'>
+<div className=' mt-1.5 w-7xl' >
             <div className='w-full flex justify-between items-center'>
  <h2 className="text-lg font-semibold mb-4">Salary Activities</h2>
             <select className="border p-2 rounded">
@@ -113,9 +114,11 @@ const SalaryDashboard = () => {
             </div>
 
         </div>
+        </div>
 
         {/* Content */}
-        <div className="grid grid-cols-4 gap-4 p-6 rounded">
+        <div className='flex justify-center items-center'>
+<div className="grid grid-cols-4 gap-4  rounded w-7xl ">
           {/* Salary Table */}
           <div className="col-span-3">
                      <table className="w-full text-left shadow-xl px-4">
@@ -150,12 +153,12 @@ const SalaryDashboard = () => {
           </div>
 
           {/* Sidebar */}
-          <div className="bg-white rounded px-4">
+          <div className="bg-white rounded-xl px-4">
            
 
   <div className=" mx-auto bg-white overflow-hidden relative">
   {/* Blue Top Half */}
-  <div className="h-20 w-full bg-blue-500"></div>
+  <div className="h-20 w-full bg-blue-500 rounded-t-xl"></div>
 
   {/* Profile Image */}
   <div className="absolute top-10 left-1/2 transform -translate-x-1/2">
@@ -184,11 +187,13 @@ const SalaryDashboard = () => {
               <div className="flex justify-between"><span>Bank Details:</span><span className="font-semibold">234567890 Polaris Bank</span></div>
               <div className="flex justify-between"><span>Currency:</span><span className="font-semibold">$USD</span></div>
             </div>
-
-            <div className="mt-4 text-left">
+<hr className='my-4 text-black/40'/>
+            <div className=" text-left flex justify-between items-center w-full">
               <button className="text-blue-600 text-sm underline">View Payroll History</button>
+              <div>→</div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
