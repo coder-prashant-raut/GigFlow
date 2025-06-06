@@ -19,7 +19,7 @@ const DashboardPage = () => {
     <div className="bg-gray-100 min-h-screen overflow-x-hidden  text-gray-800 font-sans">
       {/* Top Navbar */}
      <div className="w-screen flex justify-center items-center">
- <header className="bg-white shadow-md px-6 py-4 mt-4 mx-6 w-7xl rounded-4xl flex items-center justify-between">
+ <header className="bg-gradient-to-b from-blue-500/50 via-blue-500/30 to-blue-500/10 shadow-md px-6 py-4 mt-4 mx-6 w-7xl rounded-4xl flex items-center justify-between">
   <div className="flex items-center space-x-4">
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Iconic_image_placeholder.svg"
@@ -117,12 +117,17 @@ const DashboardPage = () => {
             { label: "Hiring", count: 5 },
             { label: "Projects", count: 1 },
           ].map((card, idx) => (
-            <div key={idx} className="bg-white p-4 rounded-lg shadow-sm">
-              <p className="text-3xl font-bold">{card.count}</p>
+            <div key={idx} className="bg-white  p-4 rounded-lg shadow-sm">
               <p className="text-gray-600">{card.label}</p>
-              <a href="#" className="text-sm text-blue-600 mt-2 inline-block">
-                View Details →
+              <p className="text-3xl font-bold">{card.count}</p>
+              <hr className="text-black/20" />
+             <div className="flex justify-between items-center">
+               <a href="#" className="text-sm text-blue-600 mt-2 inline-block">
+                View Details
               </a>
+
+              <a href="" className="font-bold"> →</a>
+             </div>
             </div>
           ))}
         </div>

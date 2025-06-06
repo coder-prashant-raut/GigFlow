@@ -9,8 +9,8 @@ function App() {
   return (
     <div>
       {/* <RegisterPage/> */}
-      <SignIn/>
-      {/* <DashboardPage/> */}
+      {/* <SignIn/> */}
+      <DashboardPage/>
       {/* <PeopleDashboard/> */}
 
       {/* <SalaryDashboard/> */}
