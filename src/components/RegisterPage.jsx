@@ -3,7 +3,7 @@ import React from "react";
 const RegisterPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-100 to-gray-200 px-4">
-      <div className="w-full max-w-6xl max-h-screen flex flex-col md:flex-row bg-white shadow-2xl rounded-xl overflow-hidden">
+      <div className="w-full max-w-6xl max-h-screen flex flex-col md:flex-row bg-white shadow-2xl overflow-hidden">
         {/* Left Side - Image */}
         <div className="md:w-1/2 h-64 md:h-auto">
           <img
@@ -14,9 +14,9 @@ const RegisterPage = () => {
         </div>
 
         {/* Right Side - Form */}
-        <div className="w-full md:w-1/2 p-8 md:p-12 bg-gradient-to-b from-[#c5d4e3] to-[#9aaebf]">
+        <div className="w-full md:w-3/5 p-8 md:p-12 bg-gradient-to-b from-[#c5d4e3] to-[#9aaebf]">
           {/* Logo and Header */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-2">
             <div className="bg-white p-3 rounded-md inline-block shadow">
               <h1 className="text-xl font-bold text-blue-600">GIGFLOWW</h1>
               <p className="text-sm text-gray-600">Welcome to Gigfloww</p>
@@ -30,41 +30,41 @@ const RegisterPage = () => {
           {/* Form */}
           <form className="space-y-4">
             <div>
-              <label className="text-sm text-gray-800 mb-1 block">Name</label>
+              <label className="text-sm font-semibold text-gray-700 mb-1 block">Name</label>
               <input
                 type="text"
                 placeholder="Your name"
-                className="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                className="w-full px-4 py-2 rounded-full border bg-white border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
               />
             </div>
             <div>
-              <label className="text-sm text-gray-800 mb-1 block">Email Address</label>
+              <label className="text-sm font-semibold text-gray-700 mb-1 block">Email Address</label>
               <input
                 type="email"
                 placeholder="Your email"
-                className="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                className="w-full px-4 py-2 rounded-full border bg-white border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
               />
             </div>
             <div>
-              <label className="text-sm text-gray-800 mb-1 block">Password</label>
+              <label className="text-sm font-semibold text-gray-700 mb-1 block">Password</label>
               <input
                 type="password"
                 placeholder="Your password"
-                className="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                className="w-full px-4 py-2 rounded-full border bg-white border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
               />
             </div>
             <div>
-              <label className="text-sm text-gray-800 mb-1 block">Confirm Password</label>
+              <label className="text-sm font-semibold text-gray-700 mb-1 block">Confirm Password</label>
               <input
                 type="password"
                 placeholder="Re confirm your password"
-                className="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                className="w-full px-4 py-2 rounded-full border bg-white border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full py-2 mt-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold shadow-md hover:from-cyan-600 hover:to-blue-700 transition"
+              className="w-full py-2 mt-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold shadow-md hover:from-cyan-600 hover:to-blue-700 transition"
             >
               Register
             </button>
