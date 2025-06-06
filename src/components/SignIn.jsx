@@ -1,4 +1,6 @@
 import React from "react";
+import LOGO from '../assets/logo.png'
+
 
 const SignIn = () => {
   return (
@@ -16,9 +18,9 @@ const SignIn = () => {
         {/* Right Side - Form */}
         <div className="w-full md:w-3/5 p-8 md:p-12  ">
           {/* Logo and Header */}
-          <div className="text-center mb-2">
+          <div className="text-center mb-2 ">
             <div className="bg-white p-3 rounded-md inline-block shadow">
-              <h1 className="text-xl font-bold text-blue-600">GIGFLOWW</h1>
+              <img src={LOGO} className="w-32" alt="" />
               <p className="text-sm text-gray-600">Welcome to Gigfloww</p>
             </div>
             <h2 className="text-3xl font-bold mt-6 text-gray-800">Register</h2>

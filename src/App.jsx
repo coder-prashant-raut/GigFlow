@@ -4,17 +4,19 @@ import DashboardPage from './components/DashboardPage'
 import PeopleDashboard from './components/PeopleDashboard'
 import SalaryDashboard from './components/SalaryDashboard'
 import SignIn from './components/SignIn'
+import JobPostingForm from './components/JobPostingForm'
 
 function App() {
   return (
-    <div>
-      {/* <RegisterPage/> */}
-      {/* <SignIn/> */}
-      {/* <DashboardPage/> */}
-      {/* <PeopleDashboard/> */}
+   <div className="space-y-6">
+  <RegisterPage />
+  <SignIn />
+  <DashboardPage />
+  <PeopleDashboard />
+  <SalaryDashboard />
+  <JobPostingForm />
+</div>
 
-      <SalaryDashboard/>
-    </div>
   )
 }
 

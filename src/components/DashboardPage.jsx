@@ -2,6 +2,8 @@ import React from "react";
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
+import LOGO from '../assets/logo.png'
+
 
 const data = [
   { day: 'Mon', value: 30 },
@@ -22,18 +24,18 @@ const DashboardPage = () => {
  <header className="bg-gradient-to-b from-blue-500/50 via-blue-500/30 to-blue-500/10 shadow-md px-6 py-4 mt-4 mx-6 w-7xl rounded-4xl flex items-center justify-between">
   <div className="flex items-center space-x-4">
     <img
-      src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Iconic_image_placeholder.svg"
+      src={LOGO}
       alt="Logo"
-      className="h-8 w-8"
+      className=" w-32"
     />
-    <span className="text-xl font-bold text-blue-600">GIGFLOWW</span>
+   
     <nav className="ml-6 hidden md:flex space-x-4">
       {["Dashboard", "People", "Hiring", "Salary", "Reviews"].map((item, i) => (
         <a
           key={i}
           href="#"
           className={`px-3 py-1 rounded-full ${
-            item === "Dashboard" ? "bg-blue-100 text-blue-700 font-semibold" : "text-gray-600 hover:text-blue-600"
+            item === "Dashboard" ? "bg-white text-blue-700 font-semibold" : "text-gray-600 hover:text-blue-600"
           }`}
         >
           {item}

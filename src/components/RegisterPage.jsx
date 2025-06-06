@@ -1,5 +1,5 @@
 import React from "react";
-
+import LOGO from '../assets/logo.png'
 const RegisterPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-100 to-gray-200 px-4">
@@ -18,7 +18,7 @@ const RegisterPage = () => {
           {/* Logo and Header */}
           <div className="text-center mb-2">
             <div className="bg-white p-3 rounded-md inline-block shadow">
-              <h1 className="text-xl font-bold text-blue-600">GIGFLOWW</h1>
+              <img src={LOGO} className="w-24" alt="" />
               <p className="text-sm text-gray-600">Welcome to Gigfloww</p>
             </div>
             <h2 className="text-3xl font-bold mt-6 text-gray-800">Register</h2>
@@ -89,9 +89,9 @@ const RegisterPage = () => {
               <span>Register with Google</span>
             </button>
 
-            <button className="flex items-center justify-center gap-2 px-4 py-2 border rounded-full bg-black text-white hover:bg-gray-900 transition">
+            <button className="flex items-center justify-center gap-2 px-4 py-2 border rounded-full bg-white text-black hover:bg-gray-900 transition">
               <img
-                src="https://www.svgrepo.com/show/452115/apple.svg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLijaPszr2xuNXoK23blRKlGr_eV7C762Bew&s"
                 alt="Apple"
                 className="h-5 w-5 invert"
               />
