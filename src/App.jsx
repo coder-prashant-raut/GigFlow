@@ -11,9 +11,9 @@ function App() {
       {/* <RegisterPage/> */}
       {/* <SignIn/> */}
       {/* <DashboardPage/> */}
-      <PeopleDashboard/>
+      {/* <PeopleDashboard/> */}
 
-      {/* <SalaryDashboard/> */}
+      <SalaryDashboard/>
     </div>
   )
 }
